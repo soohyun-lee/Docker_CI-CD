@@ -2,10 +2,12 @@
 
 language: generic
 
-dist: xenial
-
 services:
   - docker
+
+os: linux
+
+dist: xenial
 
 before_install:
   - docker build -t tngusdl527/docker-react-app -f Dockerfile.dev .
